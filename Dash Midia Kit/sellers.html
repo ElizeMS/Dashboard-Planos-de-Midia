@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sellers | Dashboard</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <img src="./assest/LogoBrotoAmarelo.png" alt="Logo Broto">
+        </div>
+
+
+        <nav class="menu">
+
+            <p class="menu-title">MENU</p>
+
+            <a href="./DashMidiaKit.html" class="menu-item">
+                <span class="icon"></span>
+                Dashboard
+            </a>
+
+
+            <p class="menu-title">ANÁLISES</p>
+
+            <a href="./sellers.html" class="menu-item active">
+                <span class="icon"></span>
+                Sellers
+            </a>
+
+            <a href="./Servicos.html" class="menu-item">
+                <span class="icon"></span>
+                Serviços
+            </a>
+
+            
+
+        </nav>
+
+
+        <div class="sidebar-footer">
+            <span>Mídia Kit</span>
+            <small>2026</small>
+        </div>
+
+    </aside>
+
+
+    <main class="main">
+
+        <header class="header">
+
+            <div class="header-title">
+
+                <span class="breadcrumb">
+                    Dashboard / Sellers
+                </span>
+
+                <h1>Sellers</h1>
+
+                <p>
+                    Acompanhe os investimentos e resultados por seller.
+                </p>
+
+            </div>
+
+
+
+        </header>
+
+
+        <section class="dashboard">
+
+            <div class="seller-controls">
+
+                <div class="search-box">
+                    <span>⌕</span>
+
+                    <input
+                        type="text"
+                        placeholder="Buscar seller..."
+                        id="sellerSearch"
+                    >
+                </div>
+
+
+                <div class="seller-filters">
+
+                    <div class="filter-group">
+                        <label for="sellerYear">Ano</label>
+
+                        <select id="filterYear">
+                            <option value="all">Todos os anos</option>
+                            <option value="2026">2026</option>
+                            <option value="2025">2025</option>
+                            <option value="2024">2024</option>
+                            <option value="2023">2023</option>
+                        </select>
+                    </div>
+
+
+                    <div class="filter-group">
+                        <label for="sellerMonth">Mês</label>
+
+                        <select id="filterMonth">
+
+                            <option value="all">Todos os meses</option>
+
+                            <option value="Janeiro">Janeiro</option>
+                            <option value="Fevereiro">Fevereiro</option>
+                            <option value="Março">Março</option>
+                            <option value="Abril">Abril</option>
+                            <option value="Maio">Maio</option>
+                            <option value="Junho">Junho</option>
+                            <option value="Julho">Julho</option>
+                            <option value="Agosto">Agosto</option>
+                            <option value="Setembro">Setembro</option>
+                            <option value="Outubro">Outubro</option>
+                            <option value="Novembro">Novembro</option>
+                            <option value="Dezembro">Dezembro</option>
+                        </select>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <section class="seller-list">
+
+                <div class="seller-list-header">
+
+                    <div>
+                        <h2>Todos os Sellers</h2>
+                        <p>Selecione um seller para visualizar o histórico de investimentos.</p>
+                    </div>
+
+                    <span class="seller-count"id="totalSellersCard">
+                        0
+                    </span>
+                        
+
+                </div>
+
+
+                <div class="seller-table-container">
+
+                    <table class="seller-table">
+
+                        <thead>
+                            <tr>
+                                <th>Seller</th>
+                                <th>Investimento total</th>
+                                <th>Último investimento</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+
+
+                        <tbody id="sellersList">
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+    <script src="./js/sellers.js"></script>
+
+</body>
+
+</html>

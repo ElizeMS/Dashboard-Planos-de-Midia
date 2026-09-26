@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Seller | Dashboard</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+
+
+<body>
+
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <img
+                src="./assest/LogoBrotoAmarelo.png"
+                alt="Logo Broto"
+            >
+
+        </div>
+
+
+        <nav class="menu">
+
+            <p class="menu-title">MENU</p>
+
+            <a href="DashMidiaKit.html" class="menu-item"><span class="icon"></span>
+                Dashboard
+            </a>
+
+
+            <p class="menu-title">ANÁLISES</p>
+
+            <a href="sellers.html" class="menu-item active"><span class="icon"></span>
+                Sellers
+            </a>
+
+
+            <a href="./Servicos.html" class="menu-item">
+                <span class="icon"></span>
+                Serviços
+            </a>
+
+
+            
+
+        </nav>
+
+
+        <div class="sidebar-footer">
+
+            <span>Mídia Kit</span>
+
+            <small>2026</small>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- CONTEÚDO -->
+
+    <main class="main">
+
+
+        <!-- HEADER -->
+
+        <header class="header">
+
+            <div class="header-title">
+
+                <span class="breadcrumb">
+                    Dashboard / Sellers / <span id="breadcrumbSellerName"></span>
+                </span>
+
+                <h1 id="sellerName">Empresa F</h1>
+
+                <p>
+                    Histórico de investimentos do seller.
+                </p>
+
+            </div>
+
+
+
+        </header>
+
+
+
+        <!-- DASHBOARD -->
+
+        <section class="dashboard">
+
+
+            <!-- VOLTAR -->
+
+            <a
+                href="sellers.html"
+                class="back-button"
+            >
+                ← Voltar para Sellers
+            </a>
+
+
+
+            <!-- FILTROS -->
+
+            <div class="seller-controls detail-controls">
+
+                <div></div>
+
+                <div class="seller-filters">
+
+                    <div class="filter-group">
+
+                        <label for="detailYear">
+                            Ano
+                        </label>
+
+                        <select id="detailYear">
+
+                            <option value="all">
+                                Todos os anos
+                            </option>
+
+                            <option value="2026">2026</option>
+                            <option value="2025">2025</option>
+                            <option value="2024">2024</option>
+                            <option value="2023">2023</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="filter-group">
+
+                        <label for="detailMonth">
+                            Mês
+                        </label>
+
+                        <select id="detailMonth">
+
+                            <option value="all">
+                                Todos os meses
+                            </option>
+
+                            <option value="Janeiro">Janeiro</option>
+                            <option value="Fevereiro">Fevereiro</option>
+                            <option value="Março">Março</option>
+                            <option value="Abril">Abril</option>
+                            <option value="Maio">Maio</option>
+                            <option value="Junho">Junho</option>
+                            <option value="Julho">Julho</option>
+                            <option value="Agosto">Agosto</option>
+                            <option value="Setembro">Setembro</option>
+                            <option value="Outubro">Outubro</option>
+                            <option value="Novembro">Novembro</option>
+                            <option value="Dezembro">Dezembro</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="filter-group">
+
+                        <label for="filterService">
+                            Serviço
+                        </label>
+
+                        <select id="filterService">
+
+                            <option value="all">
+                                Todos os serviços
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
+            <!-- CARD DE RESUMO -->
+
+            <div class="seller-detail-card">
+
+                <div>
+
+                    <span class="detail-label">
+                        Investimento total
+                    </span>
+
+                    <strong class="detail-value" id="totalInvestment">
+                        R$ 0
+                    </strong>
+
+                </div>
+
+
+                <div class="detail-info">
+
+                    <span>
+                        Seller
+                    </span>
+
+                    <strong id="sellerNameCard">
+                        Empresa F
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- HISTÓRICO -->
+
+            <div class="investment-history">
+
+                <div class="history-header">
+
+                    <div>
+
+                        <h2>
+                            Histórico de investimentos
+                        </h2>
+
+                        <p>
+                            Acompanhe os investimentos realizados por período.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="history-table-container">
+
+                    <table class="history-table">
+
+
+                        <thead>
+
+                            <tr>
+
+                                <th>Ano</th>
+                                <th>Mês</th>
+                                <th>Serviço</th>
+                                <th>Investimento</th>
+
+                            </tr>
+
+                        </thead>
+
+
+
+                        <tbody id="investmentHistory">
+
+                        </tbody>
+
+
+                    </table>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+</body>
+
+</html>
+
+<script src="./js/sellers.js"></script>

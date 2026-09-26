@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | Mídia Kit</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Fonte -->
+    
+</head>
+
+<body>
+
+    <!-- MENU LATERAL -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <img src="./assest/LogoBrotoAmarelo.png" alt="Logo Broto">
+        </div>
+
+        <nav class="menu">
+
+            <p class="menu-title">MENU</p>
+
+            <a href="#" class="menu-item active">
+                <span class="icon"></span>
+            Dashboard
+            </a>
+
+            <p class="menu-title">ANÁLISES</p>
+
+            <a href="./sellers.html" class="menu-item">
+                <span class="icon"></span>
+                Sellers
+            </a>
+
+            <a href="./Servicos.html" class="menu-item">
+                <span class="icon"></span>
+                Serviços
+            </a>
+
+            
+
+        </nav>
+
+        <div class="sidebar-footer">
+            <span>Mídia Kit</span>
+            <small>2026</small>
+        </div>
+
+</aside>
+
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="main">
+
+        <!-- HEADER -->
+        <header class="header">
+
+            <div class="header-title">
+                <span class="breadcrumb">Dashboard / Visão geral</span>
+                <h1>Visão Resultados</h1>
+                <p>Acompanhe os resultados de investimento e faturamento.</p>
+            </div>
+
+
+        </header>
+
+
+        <!-- DASHBOARD -->
+        <section class="dashboard">
+
+            <!-- CABEÇALHO DA SEÇÃO -->
+            <div class="section-header">
+
+                <div>
+                    <h2>Resultados</h2>
+                    <p>Visualize os principais indicadores do período.</p>
+                </div>
+
+                
+
+            </div>
+
+
+            <!-- CARDS -->
+            <div class="cards">
+
+                <!-- FATURAMENTO -->
+                <div class="card">
+
+                    <div class="card-top">
+                        <span>Faturamento total</span>
+
+                        <div class="card-icon green">
+                            R$
+                        </div>
+                    </div>
+
+                    <strong class="card-value" id="totalRevenue">
+                        R$ 0
+                    </strong>
+
+                </div>
+
+
+            
+
+
+                <!-- SELLERS -->
+                <div class="card">
+
+                    <div class="card-top">
+                        <span>Total de sellers</span>
+
+                        <div class="card-icon yellow">
+                            ♙
+                        </div>
+                    </div>
+
+                    <strong class="card-value"id="totalSellersDashboard">
+                        0
+                    </strong>
+
+                    <div class="card-footer">
+                        sellers já cadastrados em todo o período.
+                    </div>
+
+                </div>
+
+
+                <!-- RETORNO -->
+                <div class="card">
+
+                    <div class="card-top">
+                        <span>Faturamento Ano Atual</span>
+
+                        <div class="card-icon green">
+                            R$
+                        </div>
+                    </div>
+
+                    <strong class="card-value" id="totalInvestimentosAnoAtual">
+                        R$ 0
+                    </strong>
+
+                </div>
+
+                <div class="card" id="cardMetaAno">
+
+                    <div class="card-top">
+                        <span>Meta Ano Atual</span>
+
+                        <div class="card-icon blue">
+                            R$
+                        </div>
+                    </div>
+
+                    <strong class="card-value" id="valorMetaAno" >
+                     R$500.000
+                    </strong>
+
+                </div>
+
+            </div>
+            <!-- GRÁFICOS -->
+            <div class="charts">
+
+                <!-- GRÁFICO DE EVOLUÇÃO -->
+                <div class="chart-card chart-large">
+
+                    <div class="chart-header">
+                        <div>
+                            <h3>Faturamento</h3>
+                            <p>Evolução mensal dos resultados</p>
+                        </div>
+
+                        <button class="chart-menu"></button>
+                    </div>
+
+                    <div class="chart-placeholder">
+                        <canvas id="revenueChart"></canvas>
+                    </div>
+
+                    <div class="chart-legend">
+                        <span>
+                            <i class="legend-dot yellow"></i>
+                            Faturamento
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <!-- GRÁFICO POR ANO -->
+                <div class="chart-card">
+
+                    <div class="chart-header">
+                        <div>
+                            <h3>Faturamento Anual</h3>
+                            <p>Total consolidado por ano</p>
+                        </div>
+                    </div>
+
+                    <div class="chart-placeholder">
+                        <canvas id="yearlyRevenueChart"></canvas>
+                    </div>
+
+                </div>
+
+            </div>
+            
+            <div class="table-header">
+
+                <div>
+                    <h2>Performance dos Sellers</h2>
+                    <p>Sellers com mais investimento</p>
+                </div>
+
+                <button class="view-all" onclick="window.location.href='./sellers.html'">
+                    Ver todos →
+                </button>
+
+            </div>
+
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Seller</th>
+                            <th>Investimento</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="topSellersBody">
+                        <!-- preenchido via JS -->
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+    <script src="./js/sellers.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+[
+    {"id": "163", "nome": "Empresa A","investimentos":[{"ano":2026, "mes":"Setembro", "servico": "Banner","valor":11000},
+        {"ano":2026, "mes":"Setembro", "servico":"Email Marketing", "valor":67000}]},
+    {"id":"001","nome":"Empresa B","investimentos":[{"ano":2026,"mes":"Março","servico":"Publi Editorial","valor":8000}]},
+
+    {"id":"002","nome":"Empresa C","investimentos":[{"ano":2026,"mes":"Abril","servico":"Email Marketing","valor":4902}]}, 
+
+    {"id":"003","nome":"Empresa D","investimentos":[{"ano":2026,"mes":"Abril","servico":"Email Marketing","valor":80000},
+        {"ano":2026,"mes":"Abril","servico":"Banner","valor":15000}]}, 
+
+    {"id":"004","nome":"Empresa E","investimentos":[{"ano":2026,"mes":"Abril","servico":"Email Marketing","valor":76500},
+        {"ano":2026,"mes":"Abril","servico":"Banner","valor":11000}]}, 
+ 
+    {"id":"007","nome":"Empresa F","investimentos":[
+        {"ano":2026,"mes":"Maio","servico":"Publi Editorial","valor":8000},
+        {"ano":2026,"mes":"Maio","servico":"Story e Post","valor":12400},
+        {"ano":2026,"mes":"Maio","servico":"Banner","valor":11060}]}, 
+
+    {"id":"010","nome":"Empresa G","investimentos":[
+        {"ano":2026,"mes":"Julho","servico":"Banner","valor":11000}]}, 
+
+    {"id":"011","nome":"Empresa H","investimentos":[{"ano":2026,"mes":"Agosto","servico":"Banner","valor":11000},
+        {"ano":2026,"mes":"Setembro","servico":"Story e Post","valor":18000}]},
+    {"id":"012","nome":"Empresa I","investimentos":[{"ano":2026,"mes":"Setembro","servico":"Publi Editorial","valor":8000},
+        {"ano":2026,"mes":"Setembro","servico":"Story e Post","valor":12400},
+        {"ano":2026,"mes":"Setembro","servico":"Banner","valor":11060}]}, 
+
+    {"id":"013","nome":"Empresa J","investimentos":[{"ano":2026,"mes":"Outubro","servico":"Publi Editorial","valor":8000},
+        {"ano":2026,"mes":"Outubro","servico":"Story e Post","valor":12400},
+        {"ano":2026,"mes":"Outubro","servico":"Banner","valor":11060}]}, 
+
+    {"id":"014","nome":"Empresa K","investimentos":[{"ano":2026,"mes":"Novembro","servico":"Publi Editorial","valor":8000},
+        {"ano":2026,"mes":"Novembro","servico":"Story e Post","valor":12400},
+        {"ano":2026,"mes":"Novembro","servico":"Banner","valor":11060}]}, 
+
+    {"id":"015","nome":"Empresa L","investimentos":[{"ano":2026,"mes":"Dezembro","servico":"Publi Editorial","valor":8000},
+        {"ano":2026,"mes":"Dezembro","servico":"Story e Post","valor":12400},
+        {"ano":2026,"mes":"Dezembro","servico":"Banner","valor":11060}]},
+
+
+    
+    
+    
+    
+    
+    
+    {"id":"149","nome":"Empresa I","investimentos":[{"ano":2025,"mes":"Janeiro","servico":null,"valor":11650},
+        {"ano":2025,"mes":"Fevereiro","servico":null,"valor":11650},
+        {"ano":2025,"mes":"Março","servico":null,"valor":11650},
+        {"ano":2025,"mes":"Abril","servico":null,"valor":11650},
+        {"ano":2025,"mes":"Maio","servico":null,"valor":11650}]},
+    {"id":"150","nome":"Valmont","investimentos":[
+        {"ano":2025,"mes":"Março","servico":null,"valor":32875}]},
+    
+    {"id":"151","nome":"Empresa J","investimentos":[{"ano":2025,"mes":"Janeiro","servico":null,"valor":22884.2112830613},
+        {"ano":2025,"mes":"Fevereiro","servico":null,"valor":22884.2112830613},
+        {"ano":2025,"mes":"Março","servico":null,"valor":22884.2112830613},
+        {"ano":2025,"mes":"Abril","servico":null,"valor":19374.3612830613},
+        {"ano":2025,"mes":"Maio","servico":null,"valor":7691.58325830051},
+        {"ano":2025,"mes":"Junho","servico":null,"valor":7691.58325830051}]},
+    {"id":"152","nome":"Empresa K","investimentos":[{"ano":2025,"mes":"Janeiro","servico":null,"valor":50000}]},
+    {"id":"153","nome":"Empresa L","investimentos":[{"ano":2025,"mes":"Abril","servico":null,"valor":5000}]}, 
+    {"id":"004","nome":"Empresa E","investimentos":[{"ano":2025,"mes":"Maio","servico":null,"valor":40000}]}, 
+    {"id":"155","nome":"Empresa M","investimentos":[{"ano":2025,"mes":"Fevereiro","servico":null,"valor":8000},
+        {"ano":2025,"mes":"Novembro","servico":null,"valor":15000}]}, 
+    {"id":"156","nome":"Empresa N","investimentos":[{"ano":2025,"mes":"Maio","servico":null,"valor":2000},
+        {"ano":2025,"mes":"Junho","servico":null,"valor":2000}]}, 
+    {"id":"157","nome":"Empresa F","investimentos":[{"ano":2025,"mes":"Novembro","servico":null,"valor":31500}]}, 
+    {"id":"158","nome":"Empresa O","investimentos":[{"ano":2025,"mes":"Abril","servico":null,"valor":7000}]}, 
+    {"id":"159","nome":"Empresa B","investimentos":[{"ano":2025,"mes":"Abril","servico":null,"valor":4300},
+        {"ano":2025,"mes":"Maio","servico":null,"valor":5191.87},{"ano":2025,"mes":"Junho","servico":null,"valor":8600}]}, 
+    {"id":"160","nome":"Empresa P","investimentos":[{"ano":2025,"mes":"Dezembro","servico":null,"valor":10000}]}, 
+    {"id":"161","nome":"Empresa Q","investimentos":[{"ano":2025,"mes":"Junho","servico":null,"valor":15000}]}, 
+    {"id":"162","nome":"Empresa R","investimentos":[{"ano":2025,"mes":"Setembro","servico":null,"valor":4400},
+        {"ano":2025,"mes":"Outubro","servico":null,"valor":13200}]}, 
+    {"id":"163","nome":"Empresa A","investimentos":[{"ano":2025,"mes":"Outubro","servico":null,"valor":90000},
+        {"ano":2025,"mes":"Novembro","servico":null,"valor":30000}]}, 
+    {"id":"164","nome":"Empresa S","investimentos":[{"ano":2025,"mes":"Outubro","servico":null,"valor":5000}]}, 
+    {"id":"165","nome":"Empresa T","investimentos":[{"ano":2025,"mes":"Fevereiro","servico":null,"valor":4000},
+        {"ano":2025,"mes":"Junho","servico":null,"valor":13000}]},
+    {"id":"166","nome":"Empresa U","investimentos":[{"ano":2025,"mes":"Fevereiro","servico":null,"valor":4000},
+        {"ano":2025,"mes":"Junho","servico":null,"valor":13000}]},
+    {"id":"167","nome":"Empresa V","investimentos":[{"ano":2025,"mes":"Fevereiro","servico":null,"valor":4000},
+        {"ano":2025,"mes":"Junho","servico":null,"valor":13000}]},
+    {"id":"168","nome":"Empresa W","investimentos":[{"ano":2025,"mes":"Fevereiro","servico":null,"valor":4000},
+        {"ano":2025,"mes":"Junho","servico":null,"valor":13000}]},
+    {"id":"169","nome":"Empresa X","investimentos":[{"ano":2025,"mes":"Fevereiro","servico":null,"valor":4000},
+        {"ano":2025,"mes":"Junho","servico":null,"valor":13000}]},
+    {"id":"170","nome":"Empresa Y","investimentos":[{"ano":2025,"mes":"Fevereiro","servico":null,"valor":4000},
+        {"ano":2025,"mes":"Junho","servico":null,"valor":13000}]},
+
+
+
+    
+    {"id":"078","nome":"Empresa U","investimentos":[{"ano":2024,"mes":"Janeiro","servico":null,"valor":10000}]},
+    {"id":"079","nome":"Empresa V","investimentos":[{"ano":2024,"mes":"Janeiro","servico":null,"valor":10000}]},
+    {"id":"080","nome":"Empresa M","investimentos":[{"ano":2024,"mes":"Janeiro","servico":null,"valor":30000}]},
+    {"id":"081","nome":"Empresa W","investimentos":[{"ano":2024,"mes":"Fevereiro","servico":null,"valor":5000}]},
+    {"id":"082","nome":"Empresa X","investimentos":[{"ano":2024,"mes":"Março","servico":null,"valor":10000}]},
+    {"id":"083","nome":"Empresa B","investimentos":[{"ano":2024,"mes":"Março","servico":null,"valor":5000}]},
+    {"id":"084","nome":"Empresa M","investimentos":[{"ano":2024,"mes":"Abril","servico":null,"valor":35000}]},
+    {"id":"085","nome":"Empresa Y","investimentos":[{"ano":2024,"mes":"Abril","servico":null,"valor":7005}]},
+    {"id":"086","nome":"Empresa Y","investimentos":[{"ano":2024,"mes":"Junho","servico":null,"valor":3600}]},
+    {"id":"087","nome":"Empresa A","investimentos":[{"ano":2024,"mes":"Junho","servico":null,"valor":2000}]},
+    {"id":"088","nome":"Empresa V","investimentos":[{"ano":2024,"mes":"Julho","servico":null,"valor":2000}]},
+    {"id":"089","nome":"Empresa J","investimentos":[{"ano":2024,"mes":"Agosto","servico":null,"valor":2000},{"ano":2024,"mes":"Setembro","servico":null,"valor":2000},{"ano":2024,"mes":"Outubro","servico":null,"valor":2000}]},
+    {"id":"090","nome":"Empresa H","investimentos":[{"ano":2024,"mes":"Outubro","servico":null,"valor":500}]},
+    {"id":"091","nome":"Empresa V","investimentos":[{"ano":2024,"mes":"Outubro","servico":null,"valor":7900}]},
+    {"id":"092","nome":"Empresa L","investimentos":[{"ano":2024,"mes":"Outubro","servico":null,"valor":8000}]},
+    {"id":"093","nome":"Empresa P","investimentos":[{"ano":2024,"mes":"Agosto","servico":null,"valor":32000}]},
+    {"id":"094","nome":"Empresa I","investimentos":[{"ano":2024,"mes":"Novembro","servico":null,"valor":40000},{"ano":2024,"mes":"Dezembro","servico":null,"valor":40000}]},
+    {"id":"095","nome":"Empresa H","investimentos":[{"ano":2024,"mes":"Setembro","servico":null,"valor":17000},{"ano":2024,"mes":"Outubro","servico":null,"valor":17000}]},
+
+    {"id":"097","nome":"Empresa G","investimentos":[{"ano":2024,"mes":"Novembro","servico":null,"valor":18000}]},
+    {"id":"098","nome":"Empresa J","investimentos":[{"ano":2024,"mes":"Dezembro","servico":null,"valor":3510}]},
+
+    {"id":"100","nome":"Empresa L","investimentos":[{"ano":2024,"mes":"Dezembro","servico":null,"valor":20000}]},
+    {"id":"101","nome":"Empresa K","investimentos":[{"ano":2024,"mes":"Dezembro","servico":null,"valor":20000}]},
+    {"id":"102","nome":"Empresa M","investimentos":[{"ano":2024,"mes":"Dezembro","servico":null,"valor":20000}]},
+    {"id":"103","nome":"Empresa N","investimentos":[{"ano":2024,"mes":"Dezembro","servico":null,"valor":20000}]},
+    {"id":"104","nome":"Empresa O","investimentos":[{"ano":2024,"mes":"Dezembro","servico":null,"valor":20000}]},
+    {"id":"105","nome":"Empresa P","investimentos":[{"ano":2024,"mes":"Dezembro","servico":null,"valor":20000}]},
+    {"id":"106","nome":"Empresa Q","investimentos":[{"ano":2024,"mes":"Dezembro","servico":null,"valor":20000}]},
+    {"id":"107","nome":"Empresa R","investimentos":[{"ano":2024,"mes":"Dezembro","servico":null,"valor":20000}]},
+    {"id":"108","nome":"Empresa S","investimentos":[{"ano":2024,"mes":"Dezembro","servico":null,"valor":20000}]},
+    {"id":"109","nome":"Empresa T","investimentos":[{"ano":2024,"mes":"Dezembro","servico":null,"valor":20000}]},
+    {"id":"110","nome":"Empresa U","investimentos":[{"ano":2024,"mes":"Dezembro","servico":null,"valor":20000}]},
+
+
+
+    {"id": "200", "nome": "Empresa Z", "investimentos": [{"ano": 2023, "mes":"Dezembro", "servico": "Email Marketing", "valor": 12000}]},
+    {"id": "201", "nome": "Empresa J", "investimentos": [{"ano": 2023, "mes":"Março", "servico": "Story e Post", "valor": 5000}]},
+    {"id": "202", "nome": "Empresa C", "investimentos": [{"ano": 2023, "mes":"Setembro", "servico": "Story e Post", "valor": 8000}]},
+    {"id": "203", "nome": "Empresa X", "investimentos": [{"ano": 2023, "mes":"Junho", "servico": "Publi Editorial", "valor": 11000}]},
+    {"id": "204", "nome": "Empresa Z", "investimentos": [{"ano": 2023, "mes":"Janeiro", "servico": "Publi Editorial", "valor": 8000}]},
+    {"id": "205", "nome": "Empresa Y", "investimentos": [{"ano": 2023, "mes":"Fevereiro", "servico": "Banner", "valor": 15000}]},
+    {"id": "206", "nome": "Empresa W", "investimentos": [{"ano": 2023, "mes":"Abril", "servico": "Email Marketing", "valor": 67000}]}
+    
+]
+
+
+

@@ -1,0 +1,305 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Serviços | Mídia Kit</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <!-- MENU LATERAL -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <img src="./assest/LogoBrotoAmarelo.png" alt="Logo Broto">
+        </div>
+
+        <nav class="menu">
+
+            <p class="menu-title">MENU</p>
+
+            <a href="./DashMidiaKit.html" class="menu-item">
+                <span class="icon"></span>
+                Dashboard
+            </a>
+
+            <p class="menu-title">ANÁLISES</p>
+
+            <a href="./sellers.html" class="menu-item">
+                <span class="icon"></span>
+                Sellers
+            </a>
+
+            <a href="./Servicos.html" class="menu-item active">
+                <span class="icon"></span>
+                Serviços
+            </a>
+
+        </nav>
+
+        <div class="sidebar-footer">
+            <span>Mídia Kit</span>
+            <small>2026</small>
+        </div>
+
+    </aside>
+
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="main">
+
+        <!-- HEADER -->
+        <header class="header">
+
+            <div class="header-title">
+
+                <span class="breadcrumb">
+                    Dashboard / Serviços
+                </span>
+
+                <h1>Serviços</h1>
+
+                <p>
+                    Acompanhe a receita gerada por cada serviço.
+                </p>
+
+            </div>
+
+        </header>
+
+
+        <!-- CONTEÚDO -->
+        <section class="dashboard">
+
+            <!-- CABEÇALHO -->
+            <div class="section-header">
+
+                <div>
+                    <h2>Resultados por serviço</h2>
+
+                    <p>
+                        Visualize os resultados dos serviços ao longo dos anos.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- FILTROS -->
+<div class="filters service-filters">
+
+    <div class="filter-group">
+        <label for="serviceYear">Ano</label>
+
+        <select id="serviceYear">
+            <!-- preenchido automaticamente pelo JS -->
+        </select>
+    </div>
+
+    <div class="filter-group">
+        <label for="serviceFilter">Serviço</label>
+
+        <select id="serviceFilter">
+            <option value="todos">Todos</option>
+            <!-- demais serviços preenchidos pelo JS -->
+        </select>
+    </div>
+
+</div>
+
+
+            <!-- CARDS -->
+            
+<div class="cards">
+
+    <div class="card">
+        <div class="card-top">
+            <span>Receita total</span>
+            <div class="card-icon green">R$</div>
+        </div>
+        <strong class="card-value" id="totalServiceRevenue">R$ 0</strong>
+        <div class="card-footer">
+            Receita dos serviços no ano selecionado.
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-top">
+            <span id="secondServiceCardTitle">Serviço com maior receita</span>
+            <div class="card-icon yellow">%</div>
+        </div>
+        <strong class="card-value" id="secondServiceCardValue">-</strong>
+        <div class="card-footer" id="secondServiceCardFooter">
+                Serviço com maior receita no período.
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-top">
+            <span>Serviços realizados</span>
+            <div class="card-icon"></div>
+        </div>
+        <strong class="card-value" id="totalServices">0</strong>
+        <div class="card-footer">
+                Serviços com receita registrada no período.
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-top">
+            <span>Clientes</span>
+            <div class="card-icon"></div>
+        </div>
+        <strong class="card-value" id="totalClients">0</strong>
+        <div class="card-footer">
+                Clientes que contrataram serviços no período.
+        </div>
+    </div>
+
+</div>
+
+
+
+
+            <!-- GRÁFICO -->
+            <div class="charts">
+
+                <div class="chart-card chart-large">
+
+                    <div class="chart-header">
+
+                        <div>
+
+                            <h3>
+                                Receita mensal
+                            </h3>
+
+                            <p>
+                                Evolução da receita dos serviços ao longo do ano.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="chart-placeholder">
+
+                        <canvas id="servicesRevenueChart"></canvas>
+
+                    </div>
+
+
+                    <div class="chart-legend">
+
+                        <span>
+
+                            <i class="legend-dot yellow"></i>
+
+                            Receita
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- GRÁFICO POR SERVIÇO -->
+                <div class="chart-card">
+
+                    <div class="chart-header">
+
+                        <div>
+
+                            <h3>
+                                Receita por serviço
+                            </h3>
+
+                            <p>
+                                Total gerado por cada serviço.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="chart-placeholder">
+
+                        <canvas id="servicesComparisonChart"></canvas>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- TABELA -->
+            <div class="table-header">
+
+                <div>
+
+                    <h2>
+                        Receita por serviço
+                    </h2>
+
+                    <p>
+                        Consolidado dos serviços no ano selecionado.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                Serviço
+                            </th>
+
+                            <th>
+                                Receita
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody id="servicesTableBody">
+
+                        <!-- preenchido via JS -->
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="./js/servico.js"></script>
+
+</body>
+</html>
+
